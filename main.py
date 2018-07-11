@@ -20,28 +20,9 @@ def PhotoCapture():
     while True:
   
         ret, frame = cap.read()
-        #if ret == True:
-            #cv2.imshow('image',frame)
-
-            
-       
-        #k = cv2.waitKey(1)
-        # save frame as JPEG file if s is hit
-        #if k%256 == 115:
-        #while(1):
-        cv2.imwrite("test_image.jpg", frame) 
-            #cap.release() 
+        cv2.imwrite("test_image.jpg", frame)
         cv2.destroyAllWindows()
-        break
-            #return 1
-            
-        
-        # exit if Escape is hit
-        #if k%256 == 27:
-        #while(1):
-            #cap.release()
-            #cv2.destroyAllWindows()                  
-            #return 0
+        break 
 
     
  
